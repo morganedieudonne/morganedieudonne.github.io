@@ -1,0 +1,241 @@
+html {
+     height: 100%;
+}
+ * {
+     margin: 0;
+padding: 5px 5px 5px 5px;}
+ body {
+     font-family: 'Roboto Mono', monospace;
+     background: #fcf4e8 
+    /*url(background.png) repeat*/
+    ;
+     color: #fc5454;
+}
+ p {
+     padding: 20px 100px 20px 20px;
+     line-height: 1.7em;
+}
+ img {
+     /*border: 0;*/
+     padding: 5px 5px 5px 5px;
+}
+ h1, h2, h3, h4, h5, h6 {
+     font-family: Rubik,Helvetica,"Helvetica Neue",sans-serif;
+     text-transform: uppercase;
+     line-height: 3rem;
+     color: #fc5454;
+     margin: 0 0 15px 20px;
+     padding: 15px 0 5px 0;
+}
+
+ a, a:hover {
+     outline: none;
+     text-decoration: underline;
+     color: #fc5454;
+}
+ a:hover {
+     text-decoration: none;
+}
+ blockquote {
+     margin: 20px 0;
+     padding: 10px 20px 0 20px;
+     border: 1px solid #E5E5DB;
+     background: #fc5454;
+}
+ 
+
+ul#menu, ul#menu li {
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+ ul#menu li {
+     list-style: none;
+}
+ ul#menu li a {
+     letter-spacing: 0.1em;
+     font: normal 100% arial, sans-serif;
+     display: block;
+     float: left;
+     height: 37px;
+     padding: 29px 26px 6px 26px;
+     text-align: center;
+     color: #fcf4e8;
+     text-transform: uppercase;
+     text-decoration: none;
+     background: #fc5454 
+    /*transparent*/
+    ;
+}
+ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover {
+     color: #000;
+}
+
+ .butBackToTop {
+     position:absolute;
+     display:block;
+     width:5rem;
+     
+     border-style:solid;
+     border-color:#fc5454;
+     border-width:.3rem;
+     right:8%;
+    /*bottom:-2.8rem;
+    */
+     opacity:1;
+     transition:background-size 150ms ease-out, opacity 250ms ease-out;
+     background-image:linear-gradient(#fc5454, #fc5454);
+     background-position:0 100%;
+     background-size:100% 0;
+     background-repeat:no-repeat 
+
+          right:auto;
+     left:46.7%;
+     -ms-transform:translateX(-50%);
+     transform:translateX(-50%) width:4rem;
+     height:4rem;
+     margin-top: 20px;
+}
+ .butBackToTop.hide {
+     opacity:0;
+     pointer-events:none 
+}
+ .butBackToTop:focus,.butBackToTop:hover,.butBackToTop:active {
+     background-size:100% 100% 
+}
+ .butBackToTop:focus>svg,.butBackToTop:hover>svg,.butBackToTop:active>svg {
+     fill:#fcf4e8 
+}
+ .butBackToTop>svg {
+     fill:#fc5454;
+     position:absolute;
+     top:50%;
+     left:50%;
+     -ms-transform:translate(-50%, -50%);
+     transform:translate(-50%, -50%);
+     transition:fill 100ms ease-out 
+}
+
+ #main, #logo, #menubar, #site_content {
+     margin-left: auto;
+     margin-right: auto;
+}
+ #header {
+     background: transparent;
+     height: 240px;
+}
+ #logo {
+     background-image: url(../style/banner.svg);
+     width: 960px;
+     position: relative;
+     height: 205px;
+}
+ #logo #logo_text {
+     position: absolute;
+     top: 20px;
+     left: 0;
+}
+ #logo h1, #logo h2 {
+     font: 'Roboto Mono', monospace;
+     border-bottom: 0;
+     text-transform: none;
+     margin: 0;
+}
+ #logo_text h1, #logo_text h1 a, #logo_text h1 a:hover {
+     padding: 22px 0 0 0;
+     color: #FFF;
+     letter-spacing: 0.1em;
+     text-decoration: none;
+}
+ #logo_text h1 a .logo_colour {
+     color: #FFF;
+}
+ #logo_text h2 {
+     font-size: 100%;
+     padding: 4px 0 0 0;
+     color: #FFF;
+}
+ #menubar {
+     width: 900px;
+     height: 72px;
+     padding: 0;
+     background: #fc5454 
+    /*transparent url(transparent_light.png) repeat*/
+    ;
+}
+ 
+ #site_content {
+     width: 854px;
+     overflow: hidden;
+     margin: 0 auto 0 auto;
+     padding: 20px 24px 20px 20px;
+     background: transparent url(transparent_light.png) repeat;
+}
+ #content {
+     text-align: left;
+    /* float: right;
+     width: 630px;
+    */
+     padding: 0;
+}
+
+
+ #colours {
+     height: 0px;
+     text-align: right;
+     padding: 66px 16px 0px 300px;
+}
+
+}
+ .form_settings {
+     margin: 15px 0 0 0;
+}
+ .form_settings p {
+     padding: 0 0 4px 0;
+}
+ .form_settings span {
+     float: left;
+     width: 200px;
+     text-align: left;
+}
+ .form_settings input, .form_settings textarea {
+     padding: 5px;
+     width: 299px;
+     font: 100% arial;
+     border: 1px solid #E5E5DB;
+     background: #FFF;
+     color: #47433F;
+}
+ .form_settings .submit {
+     font: 100% arial;
+     border: 1px solid;
+     width: 99px;
+     margin: 0 0 0 212px;
+     height: 33px;
+     padding: 2px 0 3px 0;
+     cursor: pointer;
+     background: #000;
+     color: #FFF;
+}
+ .form_settings textarea, .form_settings select {
+     font: 100% arial;
+     width: 299px;
+}
+ .form_settings select {
+     width: 310px;
+}
+ .form_settings .checkbox {
+     margin: 4px 0;
+     padding: 0;
+     width: 14px;
+     border: 0;
+     background: none;
+}
+ .separator {
+     width: 100%;
+     height: 0;
+     border-top: 1px solid #D9D5CF;
+     border-bottom: 1px solid #FFF;
+     margin: 0 0 20px 0;
+}
+
